@@ -1,0 +1,79 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.menu {
+  background-color: #333; /* Background color of the navbar */
+}
+
+.menu ul {
+  list-style: none; /* Remove the default list bullet */
+  display: flex; /* Make the items inline */
+  justify-content: center; /* Center the items horizontally */
+  padding: 10px; /* Padding around the navbar */
+  margin: 0; /* Remove any default margin */
+}
+
+.menu li {
+  margin: 0 10px; /* Add some spacing between the items */
+}
+
+.menu a {
+  text-decoration: none; /* Remove underline from anchor links */
+  color: #fff; /* Link text color */
+  padding: 5px 10px; /* Padding around the links */
+  border-radius: 5px; /* Add rounded corners to the links */
+}
+
+.menu a:hover {
+  background-color: #555; /* Background color on hover */
+}
+/* styles.css (or your preferred CSS file) */
+
+.movie-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.movie {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.movie:hover {
+  transform: scale(1.05);
+}
+
+.movie img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+}
+
+.movie-content {
+  padding: 12px;
+  background-color: #f9f9f9;
+}
+
+.movie h3 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.movie p {
+  margin: 8px 0;
+  font-size: 14px;
+  color: #666;
+}
